@@ -1,0 +1,97 @@
+{
+  "workouts": [
+    {
+      "id": "d8be2362-7b68-4ea4-a1f6-03f8bc4eede7",
+      "name": "Heavy DT",
+      "mode": "5 Rounds For Time",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "12 deadlifts",
+        "9 hang power cleans",
+        "6 push jerks"
+      ],
+      "createdAt": "11/20/2021, 5:39:07 PM",
+      "updatedAt": "11/20/2021, 5:39:07 PM",
+      "trainerTips": [
+        "Aim for unbroken push jerks",
+        "The first three rounds might feel terrible, but stick to it",
+        "RX Weights: 205lb/145lb"
+      ]
+    },
+    {
+      "name": "New Tommy V2",
+      "mode": "For Time 30 mins",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters"
+      ],
+      "trainer": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken"
+      ],
+      "id": "855c492c-5309-4aec-a119-52e5569d5907",
+      "createdAt": "5/24/2022, 6:24:33 AM",
+      "updatedAt": "5/24/2022, 6:24:33 AM"
+    },
+    {
+      "name": "New Tommy V3",
+      "mode": "For Time 300 mins",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters"
+      ],
+      "trainer": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken"
+      ],
+      "id": "25f8f087-f092-497a-a072-58a7ae332cf1",
+      "createdAt": "5/24/2022, 6:26:27 AM",
+      "updatedAt": "5/24/2022, 6:26:27 AM"
+    },
+    {
+      "name": "New Tommy 123123V3",
+      "mode": "For Time 300 mins",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters"
+      ],
+      "trainer": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken"
+      ],
+      "id": "c99e1d6b-9ae9-48a1-b88e-f8dab2b4adf1",
+      "createdAt": "5/24/2022, 7:45:53 AM",
+      "updatedAt": "5/24/2022, 7:45:53 AM"
+    },
+    {
+      "name": "New Tommyiu 123123V3",
+      "mode": "new mode",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters"
+      ],
+      "trainer": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken"
+      ],
+      "id": "ff1376e1-f54c-4ab9-9915-923e5b91e103",
+      "createdAt": "5/24/2022, 11:27:12 AM",
+      "updatedAt": "5/24/2022, 11:27:12 AM"
+    }
+  ]
+}
