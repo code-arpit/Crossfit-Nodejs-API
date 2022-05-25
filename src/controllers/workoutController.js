@@ -3,21 +3,35 @@
 const workoutService = require("../services/workoutServices")
 
 const getAllWorkouts = (req, res) => {
-    try {
-        //calling the get all workout service from workoutServices file
-        const allWorkouts = workoutService.getAllWorkouts();
+    // try {
+    //     //calling the get all workout service from workoutServices file
+    //     const allWorkouts = workoutService.getAllWorkouts();
 
-        //in this variable we received the data in json format from the database
-        //so now we have to send it to the forward
-        res.send({ status: "OK", data: allWorkouts });
+    //     //in this variable we received the data in json format from the database
+    //     //so now we have to send it to the forward
+    //     res.send({ status: "OK", data: allWorkouts });
+    // } catch (error) {
+    //     res.status(error.status).send({
+    //         status: "FAILED",
+    //         data: {
+    //             error: error.message
+    //         }
+    //     });
+    // };
+    const { mode } = req.query;
+    try {
+        const allWorkouts = workoutService.getAllWorkouts({ mode });
+        res.send({
+            status: "SUCCESS",
+            data: allWorkouts
+        })
     } catch (error) {
-        res.status(error.status).send({
-            status: "FAILED",
-            data: {
-                error: error.message
-            }
-        });
-    };
+        res.send({
+            status: error.status,
+            message: error.message
+
+        })
+    }
 
 };
 
@@ -25,7 +39,7 @@ const getOneWorkout = (req, res) => {
     workoutId = req.params["workoutId"]
     if (!workoutId) {
         res.status(400).send({
-            status: "FAIELD",
+            status: "FAILED",
             data: {
                 error: "Parameter Workout ID cannot be empty"
             }

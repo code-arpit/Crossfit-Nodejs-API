@@ -71,6 +71,24 @@
       "id": "f22ea078-648f-4462-9304-42e08c033769",
       "createdAt": "5/25/2022, 4:59:55 AM",
       "updatedAt": "5/25/2022, 4:59:55 AM"
+    },
+    {
+      "name": "New Workout v4",
+      "mode": "new mode 1",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters"
+      ],
+      "trainer": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken"
+      ],
+      "id": "66749ae6-4f5b-46a0-ac92-3639ea9a2bcf",
+      "createdAt": "5/25/2022, 12:42:55 PM",
+      "updatedAt": "5/25/2022, 12:42:55 PM"
     }
   ],
   "members": [
@@ -109,24 +127,28 @@
   ],
   "records": [
     {
-      "id": "12a410bc-849f-4e7e-bfc8-4ef283ee4b19",
+      "id": "23b410bc-849f-4e7e-bfc8-4ef283ee4b19",
+      "member": "12a410bc-849f-4e7e-bfc8-4ef283ee4b19",
       "workout": "41e595f5-5269-4a4b-a1b0-feeb82cf745a",
       "record": "160 reps"
     },
     {
-      "id": "2b9130d4-47a7-4085-800e-0144f6a46059",
-      "workout": "aa3abb46-1425-4fe4-b8e7-30c7d2275752",
+      "id": "11817fb1-03a1-4b4a-8d27-854ac893cf41",
+      "member": "6a89217b-7c28-4219-bd7f-af119c314159",
+      "workout": "41e595f5-5269-4a4b-a1b0-feeb82cf745a",
       "record": "7:23 minutes"
     },
     {
-      "id": "11817fb1-03a1-4b4a-8d27-854ac893cf41",
+      "id": "12a410bc-849f-4e7e-bfc8-4ef283ee6b19",
+      "member": "11817fb1-03a1-4b4a-8d27-854ac893cf41",
       "workout": "9614b371-b276-411b-81fb-6386c209a4b3",
       "record": "358 reps"
     },
     {
-      "id": "6a89217b-7c28-4219-bd7f-af119c314159",
+      "id": "2b9130d4-47a7-4085-800e-0144f6a46059",
+      "member": "6a89217b-7c28-4219-bd7f-af119c314159",
       "workout": "f22ea078-648f-4462-9304-42e08c033769",
       "record": "145 reps"
     }
-  ],
+  ]
 }
