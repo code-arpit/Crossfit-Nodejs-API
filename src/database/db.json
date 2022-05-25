@@ -1,82 +1,7 @@
 {
   "workouts": [
     {
-      "id": "d8be2362-7b68-4ea4-a1f6-03f8bc4eede7",
-      "name": "Heavy DT",
-      "mode": "5 Rounds For Time",
-      "equipment": [
-        "barbell",
-        "rope"
-      ],
-      "exercises": [
-        "12 deadlifts",
-        "9 hang power cleans",
-        "6 push jerks"
-      ],
-      "createdAt": "11/20/2021, 5:39:07 PM",
-      "updatedAt": "11/20/2021, 5:39:07 PM",
-      "trainerTips": [
-        "Aim for unbroken push jerks",
-        "The first three rounds might feel terrible, but stick to it",
-        "RX Weights: 205lb/145lb"
-      ]
-    },
-    {
-      "name": "New Tommy V2",
-      "mode": "For Time 30 mins",
-      "equipment": [
-        "barbell",
-        "rope"
-      ],
-      "exercises": [
-        "21 thrusters"
-      ],
-      "trainer": [
-        "Split the 21 thrusters as needed",
-        "Try to do the 9 and 6 thrusters unbroken"
-      ],
-      "id": "855c492c-5309-4aec-a119-52e5569d5907",
-      "createdAt": "5/24/2022, 6:24:33 AM",
-      "updatedAt": "5/24/2022, 6:24:33 AM"
-    },
-    {
-      "name": "New Tommy V3",
-      "mode": "For Time 300 mins",
-      "equipment": [
-        "barbell",
-        "rope"
-      ],
-      "exercises": [
-        "21 thrusters"
-      ],
-      "trainer": [
-        "Split the 21 thrusters as needed",
-        "Try to do the 9 and 6 thrusters unbroken"
-      ],
-      "id": "25f8f087-f092-497a-a072-58a7ae332cf1",
-      "createdAt": "5/24/2022, 6:26:27 AM",
-      "updatedAt": "5/24/2022, 6:26:27 AM"
-    },
-    {
-      "name": "New Tommy 123123V3",
-      "mode": "For Time 300 mins",
-      "equipment": [
-        "barbell",
-        "rope"
-      ],
-      "exercises": [
-        "21 thrusters"
-      ],
-      "trainer": [
-        "Split the 21 thrusters as needed",
-        "Try to do the 9 and 6 thrusters unbroken"
-      ],
-      "id": "c99e1d6b-9ae9-48a1-b88e-f8dab2b4adf1",
-      "createdAt": "5/24/2022, 7:45:53 AM",
-      "updatedAt": "5/24/2022, 7:45:53 AM"
-    },
-    {
-      "name": "New Tommyiu 123123V3",
+      "name": "New Workout",
       "mode": "new mode",
       "equipment": [
         "barbell",
@@ -89,9 +14,119 @@
         "Split the 21 thrusters as needed",
         "Try to do the 9 and 6 thrusters unbroken"
       ],
-      "id": "ff1376e1-f54c-4ab9-9915-923e5b91e103",
-      "createdAt": "5/24/2022, 11:27:12 AM",
-      "updatedAt": "5/24/2022, 11:27:12 AM"
+      "id": "41e595f5-5269-4a4b-a1b0-feeb82cf745a",
+      "createdAt": "5/25/2022, 4:59:35 AM",
+      "updatedAt": "5/25/2022, 4:59:35 AM"
+    },
+    {
+      "name": "New Workout v1",
+      "mode": "new mode",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters"
+      ],
+      "trainer": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken"
+      ],
+      "id": "aa3abb46-1425-4fe4-b8e7-30c7d2275752",
+      "createdAt": "5/25/2022, 4:59:44 AM",
+      "updatedAt": "5/25/2022, 4:59:44 AM"
+    },
+    {
+      "name": "New Workout v2",
+      "mode": "new mode",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters"
+      ],
+      "trainer": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken"
+      ],
+      "id": "9614b371-b276-411b-81fb-6386c209a4b3",
+      "createdAt": "5/25/2022, 4:59:51 AM",
+      "updatedAt": "5/25/2022, 4:59:51 AM"
+    },
+    {
+      "name": "New Workout v3",
+      "mode": "new mode",
+      "equipment": [
+        "barbell",
+        "rope"
+      ],
+      "exercises": [
+        "21 thrusters"
+      ],
+      "trainer": [
+        "Split the 21 thrusters as needed",
+        "Try to do the 9 and 6 thrusters unbroken"
+      ],
+      "id": "f22ea078-648f-4462-9304-42e08c033769",
+      "createdAt": "5/25/2022, 4:59:55 AM",
+      "updatedAt": "5/25/2022, 4:59:55 AM"
     }
-  ]
+  ],
+  "members": [
+    {
+      "id": "12a410bc-849f-4e7e-bfc8-4ef283ee4b19",
+      "name": "Jason Miller",
+      "gender": "male",
+      "dateOfBirth": "23/04/1990",
+      "email": "jason@mail.com",
+      "password": "666349420ec497c1dc890c45179d44fb13220239325172af02d1fb6635922956"
+    },
+    {
+      "id": "2b9130d4-47a7-4085-800e-0144f6a46059",
+      "name": "Tiffany Brookston",
+      "gender": "female",
+      "dateOfBirth": "09/06/1996",
+      "email": "tiffy@mail.com",
+      "password": "8a1ea5669b749354110dcba3fac5546c16e6d0f73a37f35a84f6b0d7b3c22fcc"
+    },
+    {
+      "id": "11817fb1-03a1-4b4a-8d27-854ac893cf41",
+      "name": "Catrin Stevenson",
+      "gender": "female",
+      "dateOfBirth": "17/08/2001",
+      "email": "catrin@mail.com",
+      "password": "18eb2d6c5373c94c6d5d707650d02c3c06f33fac557c9cfb8cb1ee625a649ff3"
+    },
+    {
+      "id": "6a89217b-7c28-4219-bd7f-af119c314159",
+      "name": "Greg Bronson",
+      "gender": "male",
+      "dateOfBirth": "08/04/1993",
+      "email": "greg@mail.com",
+      "password": "a6dcde7eceb689142f21a1e30b5fdb868ec4cd25d5537d67ac7e8c7816b0e862"
+    }
+  ],
+  "records": [
+    {
+      "id": "12a410bc-849f-4e7e-bfc8-4ef283ee4b19",
+      "workout": "41e595f5-5269-4a4b-a1b0-feeb82cf745a",
+      "record": "160 reps"
+    },
+    {
+      "id": "2b9130d4-47a7-4085-800e-0144f6a46059",
+      "workout": "aa3abb46-1425-4fe4-b8e7-30c7d2275752",
+      "record": "7:23 minutes"
+    },
+    {
+      "id": "11817fb1-03a1-4b4a-8d27-854ac893cf41",
+      "workout": "9614b371-b276-411b-81fb-6386c209a4b3",
+      "record": "358 reps"
+    },
+    {
+      "id": "6a89217b-7c28-4219-bd7f-af119c314159",
+      "workout": "f22ea078-648f-4462-9304-42e08c033769",
+      "record": "145 reps"
+    }
+  ],
 }

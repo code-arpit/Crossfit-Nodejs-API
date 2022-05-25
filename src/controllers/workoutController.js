@@ -3,37 +3,66 @@
 const workoutService = require("../services/workoutServices")
 
 const getAllWorkouts = (req, res) => {
-    //calling the get all workout service from workoutServices file
-    const allWorkouts = workoutService.getAllWorkouts();
+    try {
+        //calling the get all workout service from workoutServices file
+        const allWorkouts = workoutService.getAllWorkouts();
 
-    //in this variable we received the data in json format from the database
-    //so now we have to send it to the forward
-    res.send({ status: "OK", data: allWorkouts });
+        //in this variable we received the data in json format from the database
+        //so now we have to send it to the forward
+        res.send({ status: "OK", data: allWorkouts });
+    } catch (error) {
+        res.status(error.status).send({
+            status: "FAILED",
+            data: {
+                error: error.message
+            }
+        });
+    };
 
-    // res.send("Get all Workouts.")
 };
 
 const getOneWorkout = (req, res) => {
     workoutId = req.params["workoutId"]
-    console.log(req)
-    console.log(workoutId)
+    if (!workoutId) {
+        res.status(400).send({
+            status: "FAIELD",
+            data: {
+                error: "Parameter Workout ID cannot be empty"
+            }
+        });
+
+    }
 
     // calling the get one workout service from workoutServices file
-    const workout = workoutService.getOneWorkout(workoutId);
-    res.status(200).send({ status: 'OK', data: workout })
+    try {
+        const workout = workoutService.getOneWorkout(workoutId);
+        res.status(200).send({
+            status: 'OK',
+            data: workout
+        })
+    } catch (error) {
+        res.status(error.status).send({
+            status: "FAILED",
+            data: error.message
+        });
+    }
 };
 
 const createOneWorkout = (req, res) => {
     const { body } = req;
-    console.log(body)
     if (!body.name ||
         !body.mode ||
         !body.equipment ||
         !body.exercises ||
         !body.trainerTips
     ) {
-        console.log("Please enter all the workout details")
-        res.status(422).send({ status: "FAIL", data: "Please Enter all the amounts" });
+        ("Please enter all the workout details")
+        res.status(422).send({
+            status: "FAILED",
+            data: {
+                error: "Please Enter all the values"
+            }
+        });
     }
     // creating a new varibale with all the entered details
     const newWorkout = {
@@ -43,12 +72,21 @@ const createOneWorkout = (req, res) => {
         exercises: body.exercises,
         trainer: body.trainerTips,
     };
-    console.log(newWorkout)
+    try {
         // calling the create new workout service from workoutServices file
-    const createdWorkout = workoutService.createNewWorkout(newWorkout);
+        const createdWorkout = workoutService.createNewWorkout(newWorkout);
 
-    // sending response
-    res.status(201).send({ status: "OK", data: createdWorkout });
+        // sending response
+        res.status(201).send({
+            status: "OK",
+            data: createdWorkout
+        });
+    } catch (error) {
+        res.status(error.status).send({
+            status: "FAILED",
+            data: error.message
+        });
+    }
 };
 
 const updateOneWorkout = (req, res) => {
@@ -57,15 +95,24 @@ const updateOneWorkout = (req, res) => {
         params: { workoutId },
     } = req;
     if (!workoutId) {
-        res.status(422).send({ status: "FAIL", data: "Please enter a workout Id." })
+        res.status(422).send({
+            status: "FAILED",
+            data: "Please enter a workout Id."
+        })
     }
-
-    // calling the update workout service from workoutServices file
-    const updatedWorkout = workoutService.updateOneWorkout(workoutId, body);
-    res.status(201).send({
-        status: "OK",
-        data: `Workout Successfully updated.`
-    })
+    try {
+        // calling the update workout service from workoutServices file
+        const updatedWorkout = workoutService.updateOneWorkout(workoutId, body);
+        res.status(201).send({
+            status: "OK",
+            data: `Workout Successfully updated.`
+        })
+    } catch (error) {
+        res.status(error.status).send({
+            status: "FAILED",
+            data: error.message
+        })
+    }
 };
 
 const deleteOneWorkout = (req, res) => {
@@ -74,14 +121,25 @@ const deleteOneWorkout = (req, res) => {
     } = req;
     if (!workoutId) {
         res.status(422).send({
-            status: "FAIL",
+            status: "FAILED",
             data: "Please provide workoutID."
         })
     }
 
-    // caliing the delete workout service from workoutService file
-    workoutService.deleteOneWorkout(workoutId);
-    res.status(201).send({ status: "OK", data: "Deleted workout successfully." })
+    try {
+        // caliing the delete workout service from workoutService file
+        workoutService.deleteOneWorkout(workoutId);
+        res.status(201).send({
+            status: "OK",
+            data: "Deleted workout successfully."
+        })
+    } catch (error) {
+        res.status(error.status).send({
+            status: "FAILED",
+            data: error.message
+        })
+    }
+
 };
 
 module.exports = {
