@@ -1,11 +1,17 @@
 const express = require("express");
-const workoutController = require("../../controllers/workoutController")
-const recordController = require("../../controllers/recordController")
+const apicache = require("apicache");
 
+const workoutController = require("../../controllers/workoutController");
+const recordController = require("../../controllers/recordController");
+
+//Initiating router
 const router = express.Router();
 
+//Initiating middleware
+const cache = apicache.middleware;
+
 // CRUD in workouts
-router.get("/", workoutController.getAllWorkouts);
+router.get("/", cache("2 minutes"), workoutController.getAllWorkouts);
 
 router.get("/:workoutId", workoutController.getOneWorkout)
 
